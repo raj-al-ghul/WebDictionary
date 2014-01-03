@@ -1,5 +1,11 @@
-Step 1: Load this direcotry in chrome://extensions (something like that, this is from memory - so take with a grain of salt)
+Step 1: Load this direcotry in chrome://extensions by engaging developer mode
 Step 2: It will have a link to launch, also will show up in your apps for chrome
-Step 3: Pin to taskbar so you can just close it and reopen it when you want to see the changes
+Step 3: Pin to taskbar so you can just close it and reopen it when you want to see the changes (Windows)
 
 *Google if you have trouble :)
+
+General To Do:
+
+1. Display defintions along with part of speech
+2. Fix Bugs
+3. Improve the design

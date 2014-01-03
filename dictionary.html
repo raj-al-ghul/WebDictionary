@@ -1,0 +1,67 @@
+<!--
+STUFF TO DO
+
+1. AJAX to get the xml file
+2. Permissions for url in manifest.json (dictionaryapi.com/ covers it?)
+3. How to format the xml fie and display approp data
+   a. IDK if the mechanics i use to replace the same text will suffice
+4. there is no scroll bar, so if the text is bigger than 
+   window, you can scroll using the touchpad or mouse, but
+   no scroll bar.
+
+oh and should comment myScript and manifest
+-R
+-->
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        <script src="jquery.min.js"></script>
+        <script src="mustache.js"></script>
+        <script src="myScript.js"></script>
+
+        <title>Dictionary</title>
+    </head>
+    
+    <body>
+        <script id="defintionTmpl" type="text/template">
+            {{#definitions}}
+                <div class="type">
+                    {{figureOfSpeech}}
+                </div>
+                <div class="def">
+                    {{defintion}}
+                </div>
+            {{/definitions}}
+            {{^definitions}}
+                No definitions :(
+            {{/definitions}}
+        </script>
+        <!-- 
+        Made a div for the top of the app. This is where the user types the word 
+        to be defined and where the button he presses are. Made a div to make
+        pottential css in the future easier. -R
+        -->
+        <div class="top">
+            <form id="search">
+                <!--This is the field where the user types the word he wants defined -R -->
+                <input type="text" id="fld" placeholder=" word to define"/>
+    
+                <!--This is the button to hit to define a word -R -->
+                <input type="submit" id="btton" value="define"/>
+            </form>
+        </div>
+        
+        <!-- 
+        Made a div for the bottom of the app. This is where
+        the defintion is displayed. Made a div to make
+        pottential css in the future easier. -R
+        -->
+        <div id="def">
+            
+             
+        </div>
+        <img src="ajax-loader.gif" class="loading"/>
+    </body>
+</html>

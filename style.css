@@ -1,0 +1,70 @@
+#def 
+{   
+    /* Border around the definition -R */
+    border:2px solid #f7f6f4;
+    /* padding for the definition from the border -R */
+    padding:5px;
+    
+    /*
+    Need to set the size of the window
+    And then make a scroll bar
+    
+    overflow-y:scroll;
+    */
+
+}
+
+.def 
+{   
+    /* Border around the definition -R */
+    border:2px solid #f7f6f4;
+    /* padding for the definition from the border -R */
+    padding:5px;
+}
+
+html
+{
+    /*overflow-y:scroll;*/
+}
+
+.top 
+{
+    /* no idea what these are doing... made long time ago - R */
+    display: inline-block;
+    border-top: 15px;
+    padding-top: 15px;
+}
+
+body 
+{
+    /* background of app -R*/
+    background-color: #e6e6e6;
+}
+
+#btton 
+{
+    /* "define" button - R */
+    display: block; 
+    margin: 0px; 
+    width: 70px; 
+    height: 30px; 
+    margin-bottom: 5px; 
+    margin-left: 5px; 
+    padding: 0px; 
+    float: right;
+}
+
+#fld 
+{
+    /* field to enter word -R*/
+    display: block;  
+    width: 209px; 
+    height: 30px; 
+    margin-bottom: 5px; 
+    padding: 0px; 
+    float: left;
+}
+
+.loading {
+    display: none;
+}

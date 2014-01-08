@@ -2,12 +2,10 @@
     "name": "Web Dictionary",
     "description": "Chrome platform app.",
     "manifest_version": 2,
-    "version": "0.1",
-    "permissions":["background", "http://*/*"],
+    "version": "0.5",
+    "permissions":["http://*/*"],
     "app": {
-        "background": {
-                "scripts": ["main.js"]   
-            }
+        "background": {"scripts": ["background.js"]}
     },
     "icons": { "128": "icon_128.png" }
 }

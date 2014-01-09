@@ -1,3 +1,5 @@
+How to "install" extension:
+
 Step 1: Load this direcotry in chrome://extensions by engaging developer mode
 Step 2: It will have a link to launch, also will show up in your apps for chrome
 Step 3: Pin to taskbar so you can just close it and reopen it when you want to see the changes (Windows)
@@ -11,7 +13,10 @@ General To Do:
 3. Improve the design
     a. scroll bar
     b. formatting for definition
+    c. make design dynamic, change input field size. could add columns for bigger design
+    d. revize size limits
 4. Display suggestions of similar words instead of "No Definition :("
+5. Redsign of icon
 
 Later on ...
 1. Display more information

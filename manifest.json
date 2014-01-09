@@ -1,6 +1,6 @@
 {
     "name": "Web Dictionary",
-    "description": "Chrome platform app.",
+    "description": "Chrome Desktop App",
     "manifest_version": 2,
     "version": "0.5",
     "permissions":["http://*/*"],

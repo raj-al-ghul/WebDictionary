@@ -1,3 +1,4 @@
+/* Border around the body of the app. this is where the data is shown */
 #def {   
     /* Border around the definition -R */
     border:2px solid #f7f6f4;
@@ -13,15 +14,27 @@
     font-style:italic;
 }
 
+/* The defintions of the entered word */
 .def {   
     /* Border around the definition -R */
-    border:2px solid #f7f6f4;
+    /*border:2px solid #f7f6f4;*/
+    border-bottom:1px solid #f7f6f4;
+
     /* padding for the definition from the border -R */
     padding:5px;
+    
+    /* distinguishing the font */
+    font-weight:650;
+    font-size:14px;
 }
 
 html {
     /*overflow-y:scroll;*/
+}
+
+body {
+    /* background of app -R*/
+    background-color: #e6e6e6;
 }
 
 .top {
@@ -31,20 +44,15 @@ html {
     padding-top: 15px;
 }
 
-body {
-    /* background of app -R*/
-    background-color: #e6e6e6;
-}
-
-
-#fld {
-    /* field to enter word -R*/
-    display: block;  
-    width: 270px; 
-    height: 30px; 
-    margin-bottom: 5px; 
-    padding: 0px; 
-    float: left;
+/* field to enter word -R*/
+#fld {    
+    background: #ffffff;
+    border: none;
+    outline: none;
+    padding: 5px;
+    width: 300px;
+    height:35px;
+    border-radius: 2px;
 }
 
 .loading {

@@ -1,3 +1,9 @@
+This is a Desktop app for Google Chrome / Chromium (havn't tested much on this). Currently, it is being developed in Windows, so heads up, I have seen weird a pixel related bug in OSX. Linux seems fine. It should function the same on every OS, that was the whole point of Chrome apps, but no promises since I rarily test on anything but Windows. 
+
+The app uses an API provided my Merriam-Webster to provide the defitions and requires an internet connection. 
+
+You can see what the app currently looks like by viewing "current_state.PNG" 
+
 How to "install" extension:
 
 Step 1: Load this direcotry in chrome://extensions by engaging developer mode

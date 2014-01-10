@@ -50,9 +50,9 @@ body {
     border: none;
     outline: none;
     padding: 5px;
-    width: 300px;
+    width: 270px;
     height:35px;
-    border-radius: 2px;
+    border-radius: 3px; /* Rounded corners */
 }
 
 .loading {

@@ -1,3 +1,8 @@
+RIGHT NOW: 
+
+It is showing the defintions, but there are weird things going on. I will be working on it more in the coming days. 
+
+
 This is a Desktop app for Google Chrome / Chromium (havn't tested much on this). Currently, it is being developed in Windows, so heads up, I have seen weird a pixel related bug in OSX. Linux seems fine. It should function the same on every OS, that was the whole point of Chrome apps, but no promises since I rarily test on anything but Windows. 
 
 The app uses an API provided my Merriam-Webster to provide the defitions and requires an internet connection. 
@@ -20,9 +25,21 @@ General To Do:
     a. scroll bar
     b. formatting for definition
     c. make design dynamic, change input field size. could add columns for bigger design
-    d. revize size limits
+    d. revise size limits
 4. Display suggestions of similar words instead of "No Definition :("
 5. Redsign of icon
 
 Later on ...
 1. Display more information
+
+
+BUGS:
+
+Dt tag of the world English: 
+<dt>
+    :of, relating to, or characteristic of
+    <fw>England</fw>
+    , the English people, or the English language
+</dt>
+
+My code stops at "... characteristic of" and does not parse the rest. 

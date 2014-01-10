@@ -44,17 +44,28 @@ function parseResponse(response)
         entries = xmlDoc.getElementsByTagName("entry"),
         definitions = [];
     
-    for (var i = 0; i < entries.length; i++) {
+    for (var i = 0; i < 2; i++) {
         var entry = entries[i];
         
         if (!entry.getElementsByTagName("fl")[0]) {
             continue;
         }
+                
+        var deffs = entries[i].getElementsByTagName("def");
         
-        definitions.push({
-            defintion: entry.getElementsByTagName("fl")[0].childNodes[0].nodeValue,
-            figureOfSpeech: entry.getElementsByTagName("fl")[0].childNodes[0].nodeValue
-        });
+        for (var i = 0; i < deffs.length; i++) {
+            var actualDef = deffs[i];
+            
+            definitions.push({
+                defintion: actualDef.getElementsByTagName("dt")[0].childNodes[0].nodeValue,
+                figureOfSpeech: entry.getElementsByTagName("fl")[0].childNodes[0].nodeValue
+            });
+            
+        }
+        /* My new buggy code */
+        
+        
+
     }
     
     return definitions;

@@ -44,6 +44,7 @@ function parseResponse(response)
         entries = xmlDoc.getElementsByTagName("entry"),
         definitions = [];
     
+    /* only displaying the first two entries */
     for (var i = 0; i < 2; i++) {
         var entry = entries[i];
         

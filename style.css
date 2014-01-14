@@ -2,17 +2,19 @@
 #def {   
     background:#D1D1D1;
     margin-top: 10px;
-    height:80%;
+    height:85%;
     width:100%;
     margin-left:auto;
     margin-right:auto;
     border-radius: 5px;
-
 }
 
 /* The part of speach is italic -R */
 .type {
+    padding: 5px;
     font-style:italic;
+    font-weight:200;
+    font-family: Caflisch Script, Adobe Poetica, Sanvito, Ex Ponto, Snell Roundhand, Zapf-Chancery
 }
 
 /* The defintions of the entered word */
@@ -20,35 +22,35 @@
     /* padding for the definition from the border -R */
     padding:5px;
     /* distinguishing the font */
-    font-weight:650;
+    font-weight:690; /*650*/
     font-size:14px;
 }
 
 .top {
     background:#D1D1D1;
-    padding-top: 15px;
+    /*padding-top: 15px; if i want to push text field down */
     width:100%;
-    height:38px;
+    height:41px;
     text-align: center;
-    vertical-align: middle;
     border-radius: 5px;
 }
 
 /* field to enter word -R*/
 #fld {    
+    margin-top:3;
+    margin-bottom:3;
     background: #ffffff;
     border: none;
     outline: none;
     padding: 5px;
-    width: 90%;
+    width: 95%;
     height:35px;
-    border-radius: 3px; /* Rounded corners */
+    border-radius: 3px;
 }
 
 .loading {
     display: none;
 }
-
 
 body {
     /* background of app -R*/

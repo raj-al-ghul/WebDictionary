@@ -2,7 +2,7 @@
     "name": "Web Dictionary",
     "description": "Chrome Desktop App",
     "manifest_version": 2,
-    "version": "0.5.5",
+    "version": "0.9",
     "permissions":["http://*/*"],
     "app": {
         "background": {"scripts": ["background.js"]}

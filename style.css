@@ -1,12 +1,13 @@
 /* Border around the body of the app. this is where the data is shown */
 #def {   
-    /* Border around the definition -R */
-    border:2px solid #f7f6f4;
-    /* padding for the definition from the border -R */
-    padding:5px;
-    
-    /* Want to make just the definition part of the window scrollable -R */
-    /*overflow-y:scroll;*/
+    background:#D1D1D1;
+    margin-top: 10px;
+    height:80%;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 5px;
+
 }
 
 /* The part of speach is italic -R */
@@ -16,32 +17,21 @@
 
 /* The defintions of the entered word */
 .def {   
-    /* Border around the definition -R */
-    /*border:2px solid #f7f6f4;*/
-    border-bottom:1px solid #f7f6f4;
-
     /* padding for the definition from the border -R */
     padding:5px;
-    
     /* distinguishing the font */
     font-weight:650;
     font-size:14px;
 }
 
-html {
-    /*overflow-y:scroll;*/
-}
-
-body {
-    /* background of app -R*/
-    background-color: #e6e6e6;
-}
-
 .top {
-    /* no idea what these are doing... made long time ago - R */
-    display: inline-block;
-    border-top: 15px;
+    background:#D1D1D1;
     padding-top: 15px;
+    width:100%;
+    height:38px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 5px;
 }
 
 /* field to enter word -R*/
@@ -50,7 +40,7 @@ body {
     border: none;
     outline: none;
     padding: 5px;
-    width: 270px;
+    width: 90%;
     height:35px;
     border-radius: 3px; /* Rounded corners */
 }
@@ -59,3 +49,8 @@ body {
     display: none;
 }
 
+
+body {
+    /* background of app -R*/
+    background-color: #e6e6e6;
+}

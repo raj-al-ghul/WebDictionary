@@ -28,7 +28,7 @@ oh and should comment myScript and manifest
         <script id="defintionTmpl" type="text/template">
             {{#definitions}}
                 <div class="type">
-                    {{figureOfSpeech}}
+                    ({{figureOfSpeech}})
                 </div>
                 <div class="def">
                     {{defintion}}
@@ -48,7 +48,7 @@ oh and should comment myScript and manifest
             <form id="search">
                 <!--Need to make the field look more flat -->
                 <!--This is the field where the user types the word he wants defined -R -->
-                <input type="text" id="fld" placeholder=" Type to define ..."/>
+                <input type="text" id="fld" placeholder=" Type to define ..." x-webkit-speech="true"/>
 
             </form>
         </div>

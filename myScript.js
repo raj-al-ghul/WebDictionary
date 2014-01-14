@@ -56,8 +56,10 @@ function parseResponse(response)
         for (var i = 0; i < deffs.length; i++) {
             var actualDef = deffs[i];
             
+            var strWithColon = actualDef.getElementsByTagName("dt")[0].childNodes[0].nodeValue;
+            var strWithoutColon = strWithColon.substring(1,strWithColon.length);
             definitions.push({
-                defintion: actualDef.getElementsByTagName("dt")[0].childNodes[0].nodeValue,
+                defintion: strWithoutColon,
                 figureOfSpeech: entry.getElementsByTagName("fl")[0].childNodes[0].nodeValue
             });
             
@@ -88,7 +90,11 @@ function renderDefintions(definitions) {
 }
 
 function clickHandler() {
-    var val = $('#fld').val();
+    
+    /* Get the word from #fld text input field */
+    var str_withcapitals = $('#fld').val();
+    /* turn into lower case - API has probs with upper case */
+    var val = str_withcapitals.toLowerCase();
     
     loading.show();
     def.hide();

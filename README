@@ -1,37 +1,60 @@
-RIGHT NOW: 
+What is it? How to use it?
 
-It is showing the defintions, but there are weird things going on. I will be working on it more in the coming days. 
+    This is a Desktop app for Google Chrome. How I (will) use it is to pin it 
+    to the taskbad and open it when needed to quickly look up the definition
+    of a word without being distracted. 
+    
+    First, launch the program (have to be connected to the internet). Type any
+    word you wish into the text field, it will find defintions as you type. 
+    
+    You can also input using voice. Simply click on the microphone, and speak
+    the word clearly. (make sure you enunciate!)
+    
+How it works?
+    
+    The app uses an API provided my Merriam-Webster to provide the defitions 
+    and requires an internet connection. This API returns an XML document,
+    from which I obtain the defintion using javascript. I format it using 
+    Mustache and display it. HTML/CSS use is basic, and hopefully, robust 
+    while looking good. 
+    
+    I am using two JavaScript libraries: jQuery and Mustache. They are both
+    packaged with the app, as Google recommends. 
 
-
-This is a Desktop app for Google Chrome / Chromium (havn't tested much on this). Currently, it is being developed in Windows, so heads up, I have seen weird a pixel related bug in OSX. Linux seems fine. It should function the same on every OS, that was the whole point of Chrome apps, but no promises since I rarily test on anything but Windows. 
-
-The app uses an API provided my Merriam-Webster to provide the defitions and requires an internet connection. 
-
-You can see what the app currently looks like by viewing "current_state.PNG" 
+    You can see what the app currently looks like by 
+    viewing "current_state.png" 
 
 How to "install" extension:
 
-Step 1: Load this direcotry in chrome://extensions by engaging developer mode
-Step 2: It will have a link to launch, also will show up in your apps for chrome
-Step 3: Pin to taskbar so you can just close it and reopen it when you want to see the changes (Windows)
+    Step 1: Load this direcotry in chrome://extensions by engaging developer 
+            mode
+    Step 2: It will have a link to launch, also will show up in your apps 
+            for chrome
+    Step 3: Pin to taskbar so you can just close it and reopen it when you 
+            want to see the changes (Windows)
+        
+    *Google if you have trouble :)
 
-*Google if you have trouble :)
+Warnings:
+
+    API key might eventually be revoked if used by too many people. I suggest 
+    you request your own from Merriam - Webster. 
+    
+    Currently, it is being developed in Windows, so heads up, I have seen 
+    weird a pixel related bug in OSX. Linux seems fine. It should function the 
+    same on every OS, that was the whole point of Chrome apps, but no promises 
+    since I rarily test on anything but Windows. 
 
 General To Do:
 
-1. Display defintions along with part of speech
-2. Fix Bugs
-3. Improve the design
-    a. scroll bar
-    b. formatting for definition
-    c. make design dynamic, change input field size. could add columns for bigger design
-    d. revise size limits
-4. Display suggestions of similar words instead of "No Definition :("
-5. Redsign of icon
-
-Later on ...
-1. Display more information
-
+    [] Make the div that containts the definitions scrolable if needed. Make 
+       the whole page static (not scrollable). 
+       
+    [] Display suggestions of similar words instead of "No Definition :(".
+    
+    [] Redsign of icon.
+    
+    [] Offline version of this app.
 
 BUGS:
 

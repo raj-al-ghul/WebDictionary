@@ -56,6 +56,15 @@ function parseResponse(response)
         
         for (var i = 0; i < deffs.length; i++) {
             var actualDef = deffs[i];
+           
+            /* NEED to find a way to parse tags that could be there
+            var totalDef = deffs[i].getElementsByTagName("dt");
+            
+            for (var i = 0; i < totalDef.length; i++)
+            {
+                
+            }
+            */     
             
             var strWithColon = actualDef.getElementsByTagName("dt")[0].childNodes[0].nodeValue;
             var strWithoutColon = strWithColon.substring(1,strWithColon.length);
